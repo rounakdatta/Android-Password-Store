@@ -16,12 +16,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import com.github.ajalt.timberkt.Timber.tag
 import com.github.ajalt.timberkt.e
+import com.zeapo.pwdstore.BaseActivity
 import com.zeapo.pwdstore.PasswordStore
 import com.zeapo.pwdstore.utils.splitLines
 import org.eclipse.jgit.util.StringUtils
 
 // blank activity started by service for calling startIntentSenderForResult
-class AutofillActivity : AppCompatActivity() {
+class AutofillActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
