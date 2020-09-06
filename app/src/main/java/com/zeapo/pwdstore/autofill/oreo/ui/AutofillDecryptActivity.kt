@@ -18,7 +18,6 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.github.ajalt.timberkt.d
 import com.github.ajalt.timberkt.e
-import com.zeapo.pwdstore.BaseActivity
 import com.zeapo.pwdstore.autofill.oreo.AutofillAction
 import com.zeapo.pwdstore.autofill.oreo.AutofillPreferences
 import com.zeapo.pwdstore.autofill.oreo.Credentials
@@ -48,7 +47,7 @@ import org.openintents.openpgp.IOpenPgpService2
 import org.openintents.openpgp.OpenPgpError
 
 @RequiresApi(Build.VERSION_CODES.O)
-class AutofillDecryptActivity : BaseActivity(), CoroutineScope {
+class AutofillDecryptActivity : AppCompatActivity(), CoroutineScope {
 
     companion object {
 
